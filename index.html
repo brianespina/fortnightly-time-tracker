@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fortnightly Time Tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div id="root">
+            <div class="container">
+                <h1>Fortnightly Time Tracker</h1>
+                <p>&nbsp;</p>
+                <input type="text" name="rate" id="rate">
+                <form>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Time</label>
+                    <input type="text" class="form-control" id="timetoday" name="timetoday" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="addToday">Add today</button>
+                </form>
+                <p>&nbsp;</p>
+                <button type="submit" class="btn btn-primary" id="addThisWeek">Add to Week</button>
+                <p>&nbsp;</p>
+                <h2>Time Today</h2>
+                <div id="today"></div>
+                <h3>Total Today</h3>
+                <div id="totals"></div>
+                <hr />
+                <h2>Time this Week</h2>
+                <div id="week"></div>
+                <h2>Income</h2>
+                <div id="rate"></div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
