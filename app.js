@@ -11,42 +11,49 @@
             return this.initialRate * time
         }
     }
-    const time = {
-        timeToday: 0,
-        
-        createTimeElement: (val, selector, withClear = false) => {
+
+    function time(){
+
+        let timeToday = 0
+
+        const createTimeElement = (val, selector, withClear = false) => {
             const entriesElement = document.getElementById(selector)
             if(withClear){entriesElement.innerHTML = ''}
             const entryElement = document.createElement('div')
             entryElement.textContent = val
             entriesElement.append(entryElement)
-        },
-
-        updateTotals: accumulator => {
+        }
+        const updateTotals = accumulator => {
             const totals = document.getElementById('totals')
             totals.innerHTML = accumulator
-        },
+        }
 
-        addTimeToday: () => {
+        const addTimeToday = () => {
             return function (event){
                 event.preventDefault()
-                this.createTimeElement(event.target[0].value, 'today')
-                this.timeToday += parseInt(event.target[0].value)
-                this.updateTotals(this.timeToday)
+                createTimeElement(event.target[0].value, 'today')
+                timeToday += parseInt(event.target[0].value)
+                updateTotals(timeToday)
             }
-        },
+        }
 
-        addTimeWeek: () => {
+        const addTimeWeek = () => {
             return function(){
-                let timeToday = this.timeToday
-                this.createTimeElement(timeToday, 'week', true)
+                createTimeElement(timeToday, 'week', true)
             }
+        }
+
+        return{
+            addTimeToday: addTimeToday,
+            addTimeWeek: addTimeWeek
         }
 
     }
 
-    form.addEventListener('submit', time.addTimeToday().bind(time))
-    weekAdderButton.addEventListener('click', time.addTimeWeek().bind(time))
+    const time = time2()
+    
+    form.addEventListener('submit', time.addTimeToday())
+    weekAdderButton.addEventListener('click', time.addTimeWeek())
 
 })()
 
