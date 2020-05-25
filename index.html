@@ -12,14 +12,18 @@
             <div class="container">
                 <h1>Fortnightly Time Tracker</h1>
                 <p>&nbsp;</p>
-                <input type="text" name="rate" id="rate">
+
                 <form>
                     <div class="form-group">
                     <label for="exampleInputEmail1">Time</label>
-                    <input type="text" class="form-control" id="timetoday" name="timetoday" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="timetoday" name="timetoday" aria-describedby="emailHelp" autocomplete="off">
                     </div>
                     <button type="submit" class="btn btn-primary" id="addToday">Add today</button>
                 </form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Rate</label>
+                    <input type="text" class="form-control" id="rateInput" name="timetoday" aria-describedby="emailHelp" autocomplete="off">
+                </div>
                 <p>&nbsp;</p>
                 <button type="submit" class="btn btn-primary" id="addThisWeek">Add to Week</button>
                 <p>&nbsp;</p>
