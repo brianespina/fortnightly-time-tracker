@@ -16,11 +16,21 @@
 
         let timeToday = 0
 
-        const createTimeElement = (val, selector, withClear = false) => {
+        const createTimeElement = (val, selector, withClear = false, description = false, time = false) => {
             const entriesElement = document.getElementById(selector)
             if(withClear){entriesElement.innerHTML = ''}
             const entryElement = document.createElement('div')
             entryElement.textContent = val
+            if(description){
+                const descriptionElement = document.createElement('span')
+                descriptionElement.textContent = description
+                entryElement.appendChild(descriptionElement)
+            }
+            if(time){
+                const timeElement = document.createElement('small')
+                timeElement.textContent = time
+                entryElement.appendChild(timeElement)
+            }
             entriesElement.append(entryElement)
         }
         const updateIncome = totals =>{
@@ -33,10 +43,21 @@
             totals.innerHTML = accumulator
             updateIncome(accumulator)
         }
+        const dateCreated = () => {
+            let dt = new Date();
+            let hours = dt.getHours()
+            let AmOrPm = hours >= 12 ? 'pm' : 'am'
+            hours = (hours % 12) || 12
+            let minutes = dt.getMinutes() 
+            return (hours + ":" + minutes + " " + AmOrPm)
+        }
+
         const addTimeToday = () => {
             return function (event){
                 event.preventDefault()
-                createTimeElement(event.target[0].value, 'today')
+                const description = document.getElementById('description')
+                
+                createTimeElement(event.target[0].value, 'today', false, description.value, dateCreated())
                 timeToday += validateInput(event.target[0].value)
                 updateTotals(timeToday)
                 input.value = ''

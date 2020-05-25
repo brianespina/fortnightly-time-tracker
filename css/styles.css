@@ -5,4 +5,11 @@
     background: #f5f5f5;
     padding: 20px;
     margin: 8px 0;
+    font-weight: bold;
+    display: flex;
+}
+#today > div > span {
+    padding-left: 26px;
+    font-weight: normal;
+    flex: 1;
 }
