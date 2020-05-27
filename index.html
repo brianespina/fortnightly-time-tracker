@@ -12,32 +12,35 @@
             <div class="container">
                 <h1>Fortnightly Time Tracker</h1>
                 <p>&nbsp;</p>
+                <h2>Time Today</h2>
+                <div id="today"></div>
 
                 <form>
                     <div class="form-group">
-                    <label for="exampleInputEmail1">Time</label>
-                    <input type="text" class="form-control" id="timetoday" name="timetoday" aria-describedby="emailHelp" autocomplete="off">
-                    <label for="description">Task</label>
-                    <textarea name="description" class="form-control" id="description" cols="30" rows="10"></textarea>
+                        <label for="exampleInputEmail1">
+                            <input type="text" class="form-control" id="timetoday" name="timetoday" aria-describedby="emailHelp" autocomplete="off" placeholder="0m">
+                        </label>
+                        <label for="description">
+                            <input type="text" name="description" class="form-control" id="description" placeholder="Description">
+                        </label>
+                        <button type="submit" id="addToday"><img src="./images/plus.png"/></button>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="addToday">Add today</button>
                 </form>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Rate</label>
                     <input type="text" class="form-control" id="rateInput" name="timetoday" aria-describedby="emailHelp" autocomplete="off">
-                </div>
+                </div> -->
                 <p>&nbsp;</p>
-                <button type="submit" class="btn btn-primary" id="addThisWeek">Add to Week</button>
+                <!-- <button type="submit" class="btn btn-primary" id="addThisWeek">Add to Week</button> -->
                 <p>&nbsp;</p>
-                <h2>Time Today</h2>
-                <div id="today"></div>
+                
                 <h3>Total Today</h3>
                 <div id="totals"></div>
-                <hr />
+                <!-- <hr />
                 <h2>Time this Week</h2>
                 <div id="week"></div>
                 <h2>Income</h2>
-                <div id="rate"></div>
+                <div id="rate"></div> -->
             </div>
         </div>
         <script src="./app.js"></script>

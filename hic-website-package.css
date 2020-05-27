@@ -1,0 +1,964 @@
+/*Add clearfix*/
+/* Pricing Table */
+
+.hic-pricing-table.default-section .hic-box {
+	background-color: #F2F2F2;
+}
+.hic-pricing-table .hic-box {
+	position: relative;
+}
+.hic-pricing-table.grey-section .hic-box,
+.hic-pricing-table.theme .hic-box{
+	background-color: #FFF;
+}
+.hic-pricing-table .hic-box {	    
+    border-radius: 8px;
+    padding: 0 24px 124px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .2);
+	
+		    overflow: hidden;
+    padding-top: 58px;
+}
+
+.hic-pricing-table.content-boxes.theme .hic-title {
+		background-color: #DDDDDD;
+}
+
+.hic-pricing-table.content-boxes.default-section .hic-content ul li:first-child {
+	 border-top: 1px solid #DDDDDD;
+}
+.hic-pricing-table.content-boxes.default-section .hic-content ul li {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.hic-pricing-table.content-boxes.theme .hic-title h3 {
+	color: #555555;
+}
+
+.hic-pricing-table.content-boxes .hic-title {
+	position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px 24px;
+    color: #FFF;
+    background: #606060;
+}
+.hic-pricing-table.content-boxes .hic-title h3 {
+	  font-weight: 700;
+    line-height: 1;
+    margin: 0;
+	 	color: #FFF;
+	 font-size: 18px;
+}
+.hic-pricing-table .hic-box .button {
+	border-radius: 40px;
+}
+.hic-pricing-table.content-boxes .hic-content ul {
+	margin: 0;
+	list-style: none;
+}
+.hic-pricing-table.content-boxes .hic-content ul li:first-child {
+	 border-top: 1px solid #F2F2F2;
+}
+.hic-pricing-table.content-boxes .hic-content ul li {
+	    padding: 12px 16px;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 14px;
+}
+
+/* .hic-pricing-table.content-boxes .hic-content ul li:last-child {
+	border-bottom: none;
+} */
+
+.hic-pricing-table.content-boxes .hic-blurb h2 {
+	    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+    margin: 34px auto;
+    display: inline-block;
+}
+.hic-pricing-table .dollar-sign {
+	font-size: 18px;
+    vertical-align: top;
+    transform: translate(-4px, 12px);
+    display: inline-block;
+}
+.hic-pricing-table .total-price-text {
+	font-size: 12px;
+    margin-left: 12px;
+}
+.hic-pricing-table.content-boxes .pricing-notes {
+    font-size: 10px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    padding: 0 24px;
+}
+
+.cb-packages.hic-pricing-table.content-boxes .hic-content ul li:first-child {
+	border-top: none !important;
+}
+.cb-packages.hic-pricing-table.content-boxes .hic-content ul li:last-child {
+	border-bottom: none;
+}
+.cb-packages.hic-pricing-table.content-boxes .hic-content ul li {
+	font-size: 14px;
+	padding: 8px 0 8px 26px;
+	position: relative;
+}
+.cb-packages.hic-pricing-table.content-boxes .hic-content ul li:before {
+	    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #f36c25;
+    content: '\f058';
+}
+.cb-packages.hic-pricing-table.content-boxes .hic-content h4 {margin-top:20px;}
+.package-icons {width: 100%; float: left; margin-bottom: 20px;}
+.package-icon {text-align: center; font-size: 12px;}
+.package-icon.small-6 {float: left; width:45%}
+.package-plus {float: left; width: 10%; font-size: 50px; text-align: center;}
+.hic-pricing-table.cb-packages .hic-box {
+	padding-bottom: 8px;
+}
+.gform_wrapper .hical-sign-up-form .gform_ajax_spinner {
+    display: inline-block !important;
+    margin: 0 20px;
+}
+
+.partial_entry_warning {
+        display: none;
+}
+
+.form_saved_message_sent{
+    text-align: center;
+    font-size: 23px;
+}
+
+.form_saved_message {
+    box-shadow: 0 0px 4px 0 rgba(0,0,0, .2);
+    padding: 20px;
+    border-radius: 5px; 
+}
+
+
+
+.gform_save_link,
+input[name="gform_send_resume_link_button"] {
+    display: inline-block;
+    padding: 17px 32px;
+    background: #e3e3e3;
+    border-radius: 4px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.gform_save_link {
+    display: none;
+}
+
+input[name="gform_send_resume_link_button"],
+input[name="gform_send_resume_link_button"]:focus {
+    background-color: #f26e24;
+    color: #FFF;
+    border: transparent;
+}
+
+input[name="gform_resume_email"] {
+    background-color: #FFF !important;
+    border: 1px solid #e3e3e3 !important;
+    padding: 23px 10px;
+}
+
+body .hical-sign-up-form img.gform_ajax_spinner {
+    position: relative;
+    right: auto;
+}
+
+.hical-sign-up-form .gfield_required{
+    color: #aa0000;
+}
+.hical-sign-up-form .gf_progressbar {
+     background-color: #FFF;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid #e9e8e8;
+}
+.hical-sign-up-form .gf_progressbar_wrapper {
+        max-width: 750px;
+    margin: 0 auto 34px !important;
+}
+.hical-sign-up-form .gf_progressbar_percentage {
+    background-color: #333 !important;
+}
+.hical-sign-up-form .gf_progressbar span {
+     color: #FFF;
+    font-weight: 700;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.hical-sign-up-form .gf_progressbar_title {
+    font-weight: 700;
+    text-align: center;
+        font-size: 16px;
+}
+
+.hical-sign-up-form .hic-gf-style .gfield_label {
+        font-size:14px;
+    }
+    
+    
+   .hical-sign-up-form.hic-gf-style .custom-option-field.field-addon-choices .lg-checkbox-wrap .desc {
+     font-size: 12px;
+         line-height: 1.4;
+     
+ }  
+ 
+ .hical-sign-up-form.validation_message {
+        margin: 0px 0px 16px 8px;
+ }
+ 
+ .hical-sign-up-form.hic-gf-style .custom-option-field.field-addon-choices .lg-checkbox-wrap .title {
+         font-size: 15px;
+        line-height: 1.4;
+    margin-bottom: 6px;
+ }
+ 
+
+.hic-gf-style .gfield.pricing-wrap .gfield_radio:after,
+.hic-gf-style .gfield-clearfix .gfield_radio:after,
+.ginput_full.ginput_cardextras:after,
+.ginput_full.ginput_cardextras .ginput_card_expiration_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ginput_full.ginput_cardextras {
+    display: flex;
+    justify-content: center;
+}
+
+.hic-gf-style input[type="radio"],
+.hic-gf-style input[type="checkbox"] {
+    height: auto;
+}
+
+.hic-gf-style .no-label .gfield_label {
+    display: none;
+}
+
+.hic-gf-style .custom-msg .validation_message {
+    text-align: center;
+}
+
+.hic-gf-style .option-field-hidden input[type="radio"],
+.hic-gf-style .option-field-hidden input[type="checkbox"]{
+    position: absolute;
+    left: -999990px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hic-gf-style .custom-option-field .ginput_container_checkbox li {
+    margin-bottom: 20px;
+}
+
+.hic-gf-style select {
+    color: #0a0a0a;    
+}
+
+.hic-gf-style .custom-option-field .ginput_container_checkbox label {
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    padding-left: 34px;
+}
+
+.hic-gf-style .custom-option-field .lg-checkbox-wrap .desc {
+    font-size: 12px;
+}
+
+
+
+.hic-gf-style .custom-option-field input[type="checkbox"]+label:before, .hic-gf-style input[type="checkbox"]+label:before { 
+    content: "\f0c8";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 12px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border: none;
+}
+
+.hic-gf-style .custom-option-field.field-addon-choices input[type="checkbox"]+label:before {
+    
+}
+
+.hic-gf-style .custom-option-field.field-addon-choices input[type="checkbox"]:checked+label .lg-checkbox-wrap{
+    font-weight: 700;
+}
+
+.hic-gf-style .custom-option-field input[type="checkbox"]:checked+label:before { 
+    font-weight: 900;
+    content: "\f14a";
+    color: #f46e08;
+}
+
+.hic-gf-style .sm-content {
+    max-width: 450px;
+    margin: 0 auto;    
+}
+
+
+.hic-gf-style .md-content {
+    max-width: 600px;
+    margin: 0 auto !important;  
+}
+  
+.col-6 .gfield_radio > li .hic-box,
+.hic-gf-style .gfield.pricing-wrap .gfield_radio > li .hic-box { 
+    transition: transform .25s ease; 
+}
+.col-6 .gfield_radio > li,
+.hic-gf-style .gfield.pricing-wrap .gfield_radio > li {
+    float: left;
+    width: 100%;
+    transition: transform .25s ease; 
+}
+
+.col-6 .gfield_radio > li label {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+
+.preview-design .preview-img{
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+
+.preview-design {
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.preview-design .inner {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .2);    
+}
+
+
+.preview-design .title,
+.preview-design .footer {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.preview-design .title {
+    background: #ececec;
+    color: #000;
+    border-radius: 4px 4px 0 0; 
+}
+
+.preview-design .footer {
+    font-size: 15px;
+    background: #efefef;
+    border-radius:  0 0 4px 4px; 
+    margin-top: 0;
+}
+
+
+.hic-gf-style .gfield.pricing-wrap [type=checkbox]+label,
+.hic-gf-style .gfield.pricing-wrap [type=radio]+label {
+    display: block;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    margin-left:0;
+}
+
+
+.hical-sign-up-form .hic-pricing-table .hic-box {
+    box-shadow: 0 0px 4px 0 rgba(0,0,0, .2);
+}
+
+.hic-gf-style input[type="radio"]:checked+label .hic-box { 
+    box-shadow: 0 0px 10px 0 rgba(0,0,0, .3);
+}
+
+
+.hic-gf-style .hic-pricing-table .hic-box {
+    font-size: 20px;
+}
+
+.hic-gf-style .hic-pricing-table .hic-box {
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+.hic-gf-style input[type="radio"]:checked~li {
+    transform: scale(1.04);
+    
+}
+.hic-gf-style input[type="radio"]:checked+label .c { 
+    font-weight: bold;
+    background-color: #f26e24;
+}
+
+.hic-gf-style input[type="radio"]:checked+label .c:before { 
+    content: "\f058";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+.hic-gf-style input[type="radio"]:checked+label .hic-button-wrap .button {
+    background: #000;
+}
+
+.hic-gf-style input[type="radio"]:checked+label .hic-button-wrap .button:after { 
+    content: "ED";
+}
+
+.hic-gf-style .hic-pricing-table .info-desc {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.hic-gf-style .gfield select {
+    margin-bottom: 0px !important;
+}
+
+.hic-gf-style .gform_button.button {
+    width: auto;
+    margin: 0;
+    padding: 16px 20px;
+    height: auto;
+}
+    
+.hic-gf-style .label-center .gfield_label {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hic-gf-style .gfield input {
+    margin-bottom: 0 !important;
+}
+.hic-gf-style .gfield input[type="text"],
+.hic-gf-style .gfield select {
+    background-color: #e3e3e3;
+}
+
+.hic-gf-style .gfield {
+    margin-bottom: 10px;
+}
+    
+.hic-gf-style .gfield_label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hical-sign-up-form .gform_button.button {
+        margin-top: 12px;
+}
+.hical-sign-up-form .ginput_container_consent {
+    position: relative;
+}
+.hical-sign-up-form .ginput_container_consent input {
+    position: absolute;
+    top: 6px;    
+}
+.hical-sign-up-form .ginput_container_consent .gfield_consent_label {
+        padding-left: 16px;
+}
+
+.hic-gf-style .gf_page_steps {
+    text-align: center
+}
+
+
+.hic-gf-style .gform_card_icon {
+    display: inline-block;
+    font-size: 0;
+    margin-right: 6px;
+}
+.hic-gf-style .gform_card_icon:before {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 40px;
+    opacity: .6;
+}
+.hic-gf-style .gform_card_icon.gform_card_icon_selected:before {
+    opacity: 1;
+}
+
+
+.hic-gf-style .gform_card_icon_discover:before {
+    content: '\f1f2';
+}
+
+.hic-gf-style .gform_card_icon_amex:before {
+    content: '\f1f3';
+}
+.hic-gf-style .gform_card_icon_visa:before {
+    content: '\f1f0';
+}
+.hic-gf-style .gform_card_icon_mastercard:before {
+    content: '\f1f1';
+}
+.hic-gf-style .ginput_card_security_code_icon:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    content: '\f023';
+    font-weight: 900;
+}
+
+.hic-gf-style .ginput_card_security_code_icon + label,
+.hic-gf-style .ginput_card_security_code_icon {
+    display: inline-block;
+}
+
+ .entry-content .hic-gf-style ul {
+    margin: 0;
+}
+
+.ginput_card_expiration_container {
+    display: block;
+}
+.hic-gf-style  .ginput_full {
+    display: block;
+    margin-bottom: 22px;
+}
+
+.hic-gf-style .gfield.pricing-wrap .gfield_radio > li:hover .hic-box,
+.col-6 .gfield_radio > li:hover .hic-box,
+.hic-gf-style input[type="radio"]:checked+label .hic-box { 
+    transform: scale(1.02);
+}
+
+.hic-gf-style .ginput_total {
+    display: block;
+    color: #f46e08;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/********************************
+ * Steps
+*********************************/
+.hic-gf-style .gf_step_completed .gf_step_label {
+         color: #f46e08;
+}
+     
+.hic-gf-style .gf_step_active .gf_step_label {
+    color: #00b3f9;
+}
+
+.hic-gf-style .gf_page_steps .gf_step_number {
+    display:none;
+}
+
+/********************************
+ * Credit card
+*********************************/
+.hic-gf-style .ginput_cardinfo_left,
+.hic-gf-style .ginput_cardinfo_right {
+    display:block;
+    
+}
+.hic-gf-style .ginput_cardinfo_left {
+    float:left;
+    width: 74%;
+}
+
+.hic-gf-style  .ginput_cardinfo_right  {
+    float:right;
+    width: 24%;
+}
+
+.hic-gf-style .ginput_card_expiration_month {
+    float:left;
+    width: 49%;
+}
+
+.hic-gf-style .ginput_card_expiration_year {
+    float:right;
+    width: 49%;
+}
+
+.hic-gf-style .ginput_card_expiration_container label {
+    float: left;
+    width: 100%;
+    line-height: 240%;
+}
+
+
+.hic-gf-style .field-highlight {
+     border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    padding: 9px;
+    margin: 29px 0px;
+    background-color: #f4f4f4;
+}
+
+.hic-gf-style .label-center.field-highlight .gfield_label {
+    margin: 0px;
+}
+
+.site-packages-form .row > .columns {
+    width:100%;
+}
+
+
+.page-banner-hidden .page-element.site-packages-form {padding-top: 120px;}
+.site-packages-form .hic-gf-style .field-highlight {background-color: #fafafa;}
+
+
+/********************************
+ * Form Medium
+*********************************/
+
+body .main-contact-form.site-packages-form .section-header {
+    margin-bottom: 54px;
+}
+body .main-contact-form.site-packages-form .section-header .frm-title {
+	margin-bottom: 14px;
+}
+.site-packages-form .form-blurb {
+	max-width: 750px;
+    margin: 0 auto;
+}
+.site-packages-form .gform_wrapper {
+	padding: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+.site-packages-form .hic-gf-style .gf_page_steps {
+	background-color: #f2f2f2;
+	padding: 16px 0;
+    border-radius: 3px;	
+}
+
+.hic-gf-style .field-design-choices input[type="radio"]:checked+label .c:before {
+    display: none;
+}
+
+.hic-gf-style .field-design-choices .preview-img:after {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    content: '';
+    left: 0;
+    top: 0;
+    transition: all .25s ease;
+    opacity: 0;
+}
+.hic-gf-style .field-design-choices input[type="radio"]:checked+label .preview-img:after,
+.hic-gf-style .field-design-choices li:hover .preview-img:after {
+    opacity: 1;
+}
+.hic-gf-style .field-design-choices .preview-img:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    font-size: 52px;
+    color: #fff;
+    transition: all .25s ease;
+    opacity: 0;
+    transform: scale(0.4);
+    z-index: 2;
+}
+
+.hic-gf-style .field-design-choices input[type="radio"]:checked+label .preview-img:before {
+    opacity: 1;
+    transform: scale(1);
+    font-family: "Font Awesome 5 pro";
+}
+.hic-gf-style .field-design-choices li:hover label .c,
+.hic-gf-style .field-design-choices input[type="radio"]:checked+label .c {
+        background-color: #f26e24;
+    color: #FFF;
+}
+.hic-gf-style .field-design-choices.gfield.pricing-wrap .gfield_radio li {
+    cursor: pointer;
+}
+.hic-gf-style .field-design-choices.gfield.pricing-wrap .gfield_radio > li:hover, 
+.field-design-choices .col-6 .gfield_radio > li:hover {
+    transform: translateY(0) !important;
+}
+.hic-gf-style .field-design-choices.gfield.pricing-wrap .gfield_radio .preview-img {
+    position: relative;   
+}
+
+ .hic-gf-style.hical-sign-up-form  .gfield_label {
+        font-size:12px;
+    } 
+    
+    .hical-sign-up-form .gform_page_footer {
+        padding-top: 12px;
+    }
+    
+    .hic-gf-style.hical-sign-up-form .md-content {
+        padding: 20px;
+    }
+
+@media (min-width: 641px) {
+
+    .hic-gf-style .custom-msg .validation_message {
+        font-size: 16px;
+    }
+    
+    .page-banner-hidden .page-element.site-packages-form {padding-top: 160px;}
+
+    
+    .hic-gf-style .gform_body .gform_page {
+        
+    }
+    
+    .hic-gf-style .gfield.pricing-wrap .gfield_radio > li {
+        width: 33.33%;
+    }
+    
+    .hic-gf-style .gfield.pricing-wrap.col-6 .gfield_radio > li,
+    .hic-gf-style .gfield.pricing-wrap.number-of-options-2 .gfield_radio > li {
+        width: 50%;
+    }
+    
+    .hic-gf-style .gfield.pricing-wrap.number-of-options-2 .gfield_radio {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .col-6 .gfield_radio > li {
+        float: left;
+        width: 50%;
+    }
+    
+    .gform_page_footer {
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .hic-gf-style  .validation_message {
+        margin: 0;
+        top: auto;
+        padding: 0;
+    }
+    
+    .hic-gf-style {
+        
+    }
+    
+    
+    .hic-gf-style .gf_page_steps .gf_step {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+     .hic-gf-style .gf_page_steps {
+         display: block;
+         margin-bottom: 35px;
+     }
+     
+     .hic-gf-style .gf_step_label {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        display: inline;
+     }
+     
+     
+     
+     
+     
+     
+}
+
+@media (min-width: 768px) {
+     .site-packages-form .row > .columns.medium-7 { 
+         padding: 0;
+     }
+     
+     .hical-sign-up-form .gform_button.button {
+         margin-top: 0;
+     }
+}
+
+@media (min-width: 1024px) {
+    
+    .hic-gf-style .gform_card_icon {
+        margin-right: 12px;
+    }
+    .hic-gf-style.hical-sign-up-form .md-content {
+        padding: 32px;
+    }
+    
+    .hical-sign-up-form .ginput_container_consent input {
+            top: 9px;
+    }
+    
+    .hical-sign-up-form.hic-gf-style .custom-option-field.field-addon-choices .lg-checkbox-wrap .title {
+            font-size: 22px;
+    }
+    .hical-sign-up-form.hic-gf-style .custom-option-field.field-addon-choices .lg-checkbox-wrap .desc {
+        font-size: 16px;
+    }
+    
+    .hical-sign-up-form .gform_page_footer {
+        padding-top: 0;
+    }
+    
+    .hic-gf-style .field-design-choices .preview-img:before {
+            height: 75px;
+        width: 75px;
+        line-height: 75px;
+        font-size: 75px;
+    }
+    
+    .preview-design { 
+        padding: 0 15px;   
+    }
+    
+    .preview-design .preview-img{ 
+        height: 300px;   
+    }
+    
+    .hic-gf-style .gfield.pricing-wrap .gfield_radio > li:hover .hic-box,
+    .col-6 .gfield_radio > li:hover .hic-box,
+    .hic-gf-style input[type="radio"]:checked+label .hic-box { 
+        transform: scale(1.04);
+    }
+    
+    .site-packages-form .gform_wrapper {
+        padding: 50px;
+    }
+    
+    .hic-gf-style .ginput_total {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .hical-sign-up-form .gf_progressbar_title {
+        font-size: 24px;
+    }
+    
+    .hic-gf-style.hical-sign-up-form  .gfield_label {
+        font-size:18px;
+    }
+    .hic-gf-style .option-field .gfield_label {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .cb-steps .content-box-wrap .columns.medium-6.large-3 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 20% !important;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+
+/* Signup Form */
+.aet .page-element.main-contact-form .hical-sign-up-form .hic-pricing-table.content-boxes .hic-blurb h2 {margin-top: 10px;}
+.header-center .section-header {text-align: center !important;}
+.hic-gf-style .custom-option-field .ginput_container_checkbox li .lg-checkbox-wrap .desc {font-size: 16px;}
+.hic-gf-style .md-content {max-width: 750px;}
+.hic-gf-style .md-content { background: #f2f2f2; padding: 30px;
+    border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0, .2);}
+.hic-gf-style .md-content .gfield input[type="text"], .hic-gf-style .md-content .gfield select {    background-color: #fff;}
+.hical-sign-up-form .preview-design {position: relative;}
+.hic-gf-style .gfield_label {
+font-size: 20px;}
+.hical-sign-up-form .gform_page_footer {text-align: center;}
+.hical-sign-up-form .gform_button.button {background-color: #f26e24; padding: 12px 20px !important;}
+.aet .page-element.main-contact-form .hical-sign-up-form .gform_next_button {background-color: #f26e24;}
+.aet .page-element.main-contact-form .hical-sign-up-form .gform_previous_button {background-color: #000;}
+.hical-sign-up-form .gfield_consent_label a {color:#0a0a0a; text-decoration: underline;}
+.field-addon-choices .gfield_checkbox{text-align:left}
+
+.gform_wrapper .hical-sign-up-form ul.gfield_radio li label {
+    width: 100%;
+    max-width: 100%;
+}
+
+.gform_wrapper .hical-sign-up-form .no-top-label .gfield_label, .gform_wrapper .hical-sign-up-form .no-top-label label[for] {
+    display: block;
+}
+
+.gform_wrapper .gform_save_link {
+    display: inline-block;
+    padding: 13px 18px;
+    border-radius: 0;
+}
+.hical-sign-up-form input[type="checkbox"] + label::before, .hical-sign-up-form input[type="radio"] + label::before{
+    display: none;
+}
+.hical-sign-up-form input[type="text"]{
+    border: none;
+}
+
+.hical-sign-up-form .hic-button-wrap {
+    text-transform: uppercase;
+}
+.ginput_container.ginput_container_consent input[type="checkbox"] {
+    display: block;
+}
+.hical-sign-up-form input.button {
+    margin-bottom: 0;
+    padding: 12px 18px;
+}
+.hical-sign-up-form .gform_heading {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+        margin-bottom: auto;
+    margin-bottom: 40px;
+}
+.hical-sign-up-form .gf_progressbar {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}

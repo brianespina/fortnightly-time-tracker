@@ -2,7 +2,7 @@
 
     const form = document.querySelector('form')
     const input = document.querySelector('#timetoday')
-    const weekAdderButton = document.getElementById('addThisWeek')
+    // const weekAdderButton = document.getElementById('addThisWeek')
     
     const rate = {
         initialRate:  32,
@@ -21,6 +21,7 @@
             if(withClear){entriesElement.innerHTML = ''}
             const entryElement = document.createElement('div')
             entryElement.textContent = val
+
             if(description){
                 const descriptionElement = document.createElement('span')
                 descriptionElement.textContent = description
@@ -33,15 +34,15 @@
             }
             entriesElement.append(entryElement)
         }
-        const updateIncome = totals =>{
-            const rateInput = document.querySelector('#rateInput')
-            const income = (totals * rateInput.value) * 32
-            createTimeElement(income, 'rate', true)
-        }
+        // const updateIncome = totals =>{
+        //     const rateInput = document.querySelector('#rateInput')
+        //     const income = (totals * rateInput.value) * 32
+        //     createTimeElement(income, 'rate', true)
+        // }
         const updateTotals = accumulator => {
             const totals = document.getElementById('totals')
             totals.innerHTML = accumulator
-            updateIncome(accumulator)
+            // updateIncome(accumulator)
         }
         const dateCreated = () => {
             let dt = new Date();
@@ -56,10 +57,11 @@
             return function (event){
                 event.preventDefault()
                 const description = document.getElementById('description')
-                
+
                 createTimeElement(event.target[0].value, 'today', false, description.value, dateCreated())
                 timeToday += validateInput(event.target[0].value)
                 updateTotals(timeToday)
+                description.value = ''
                 input.value = ''
             }
         }
@@ -95,7 +97,7 @@
     const time = handleTime()
     
     form.addEventListener('submit', time.addTimeToday())
-    weekAdderButton.addEventListener('click', time.addTimeWeek())
+    // weekAdderButton.addEventListener('click', time.addTimeWeek())
 
 })()
 
