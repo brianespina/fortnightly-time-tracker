@@ -57,9 +57,11 @@
             return function (event){
                 event.preventDefault()
                 const description = document.getElementById('description')
-
-                createTimeElement(event.target[0].value, 'today', false, description.value, dateCreated())
-                timeToday += validateInput(event.target[0].value)
+                const descriptVal = description.value
+                const time = event.target[0].value
+                if(!descriptVal || !time) return
+                createTimeElement(time, 'today', false, descriptVal, dateCreated())
+                timeToday += validateInput(time)
                 updateTotals(timeToday)
                 description.value = ''
                 input.value = ''

@@ -54,4 +54,10 @@
 }
 .form-group button img{
     width: 60%;
+    transition: all 100ms ease-in-out;
 }
+.form-group button img:hover{
+    width: 60%;
+    transform: scale(1.3);
+}
+
